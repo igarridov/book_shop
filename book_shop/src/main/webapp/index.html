@@ -7,17 +7,20 @@
 <script type="text/javascript" src="js/lib/angular-resource.min.js"></script>
 <script type="text/javascript" src="wro/core.js"></script>
 </head>
-<body class="container" ng-controller="bookController as ctrl">
-	<div class="product row" ng-repeat="book in ctrl.books">
-		<h3>
-			{{book.name}} <em class="pull-right">{{book.pubdate | date}}</em>
-		</h3>
-	</div>
-	<h1>---</h1>
-	<div class="product row" ng-repeat="book in ctrl.books2">
-		<h3>
-			{{book.name}} <em class="pull-right">{{book.pubdate | date}}</em>
-		</h3>
+<body style="margin: 0px;">
+	<shop-head-bar></shop-head-bar>
+	<div ng-controller="bookController as ctrl">
+		<div class="product row" ng-repeat="book in ctrl.books">
+			<h3>
+				{{book.name}} <em class="pull-right">{{book.pubdate | date}}</em>
+			</h3>
+		</div>
+		<h1>---</h1>
+		<div class="product row" ng-repeat="book in ctrl.books2">
+			<h3>
+				{{book.name}} <em class="pull-right">{{book.pubdate | date}}</em>
+			</h3>
+		</div>
 	</div>
 </body>
 </html>

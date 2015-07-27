@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+	<context id="BOOK_SHOP" targetRuntime="MyBatis3">
+		<!-- Properties <property name="suppressTypeWarnings" value="true" /> -->
+
+		<!-- Plugin's Collection -->
+
+		<!-- Model Equals & HashCode -->
+		<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+
+		<!-- Model toString -->
+		<plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+		<!-- Serializable Model -->
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+
+		<!-- Case Insensitive Search -->
+		<plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin" />
+
+		<!-- Paging -->
+		<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
+
+
+		<!-- TODO: Revisar -->
+		<commentGenerator>
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		<!-- Database Connection -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/book_shop" userId="book_shop"
+			password="book_shop" />
+
+		<!-- Java Generated Code -->
+		<javaModelGenerator targetPackage="org.shop.book.model"
+			targetProject="MAVEN">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="config.mybatis"
+			targetProject="MAVEN">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="org.shop.book.dao" targetProject="MAVEN">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!-- Model -->
+		<table tableName="%" modelType="flat">
+			<property name="useActualColumnNames" value="false" />
+		</table>
+
+	</context>
+</generatorConfiguration>

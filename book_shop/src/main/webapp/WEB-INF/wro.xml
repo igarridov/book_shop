@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<groups xmlns="http://www.isdc.ro/wro">
+	<group name='core'>
+		<!-- css -->
+		<!-- <css>/static/css/lib/global-whitespace-reset.css</css> -->
+		
+		<!-- JavaScript -->
+		
+		<!-- App -->
+		<js>/js/app.js</js>
+		
+		<!-- Controllers -->
+		<js>/js/controllers/bookController.js</js>
+		
+		<!-- Directives -->
+		
+		<!-- Services -->
+		<js>/js/services/bookService.js</js>
+		
+	</group>
+</groups>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+		 <setting name="jdbcTypeForNull" value="NULL"/>
+    </settings>
+    
+	<!-- 
+	<typeHandlers>
+		<typeHandler javaType="org.joda.time.DateTime" handler="es.gva.san.gaia.commons.util.mybatis.handler.DateTimeTypeHandlerCallback" />
+		<typeHandler javaType="org.joda.time.DateMidnight" handler="es.gva.san.gaia.commons.util.mybatis.handler.DateMidnightTypeHandlerCallback" />
+	</typeHandlers>
+	-->
+</configuration>

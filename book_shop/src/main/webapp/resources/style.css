@@ -1,0 +1,14 @@
+.header-bar {
+	background-color: #10109a;
+}
+
+.head-button {
+	height: 40px; 
+	line-height: 40px; 
+	margin-right: 6px;
+	border: 1px solid #10109a;
+}
+
+.head-button:hover {
+	border: 1px solid orange;
+}

@@ -1,0 +1,9 @@
+<div>
+	<div class="product row" ng-repeat="book in bookCtrl.books">
+		<h3>
+			{{book.name}} <em class="pull-right">{{book.pubdate | date}}</em> 
+			<a href="#/book/{{book.idbook}}">aa</a>
+			<img src="detail.gif">
+		</h3>
+	</div>
+</div>

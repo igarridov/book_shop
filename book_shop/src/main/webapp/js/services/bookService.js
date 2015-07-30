@@ -1,6 +1,7 @@
 app.factory('bookService', [ '$resource', function($resource) {
 	 return {
-		 books: $resource('rest/book'),
-	     books2: $resource('rest/book')
+		 book: $resource('rest/book/:idbook'),
+		 author: $resource('rest/book/:idbook/author'),
+		 review: $resource('rest/book/:idbook/review')
 	    };
 } ]);

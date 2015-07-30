@@ -12,6 +12,7 @@
 		
 		<!-- Controllers -->
 		<js>/js/controllers/bookController.js</js>
+		<js>/js/controllers/bookDetailController.js</js>
 		
 		<!-- Directives -->
 		<js>/js/directives/shopHeadBar.js</js>
